@@ -1,0 +1,21 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use App::UnANSI;
+
+exit App::UnANSI->new_with_options()->run;
+
+__END__
+
+=pod
+
+=head1 SYNOPSIS
+
+    unansi my_file-colored.txt > my_file-uncolored.txt
+    cat my_file-colored.txt | unansi
+
+=head1 DESCRIPTION
+
+This application simply removes all ANSI coloring from either stdin or from
+a given file. It prints everything to screen.

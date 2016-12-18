@@ -1,0 +1,56 @@
+This is the documentation of the command implementation. You are most likely
+looking for the command documentation itself:
+[unansi](https://metacpan.org/pod/distribution/App-UnANSI/bin/unansi).
+
+# SYNOPSIS
+
+    use App::UnANSI;
+    my $unansi = App::UnANSI->new();
+    my $some_line = get_line_with_coloring();
+    $unansi->remove_ansi_colors($some_line);
+    # $some_line is now clean
+
+# DESCRIPTION
+
+This is the underlying implementation of
+[unansi](https://metacpan.org/pod/distribution/App-UnANSI/bin/unansi).
+
+# ATTRIBUTES
+
+## files
+
+Can be set on instantiation, returns a list of files to process.
+
+    my @files_to_process = $unansi->files;
+
+# METHODS
+
+## new
+
+Creates a new instance. You can provide `files` to process.
+
+    my $unansi = App::UnANSI->new();
+
+    # or
+
+    my $unansi = App::UnANSI->new(
+        'files' => [ 'foo.txt', 'bar.txt' ],
+    );
+
+## new\_with\_options
+
+Creates a new instance using options from the command line. This
+is what the CLI uses.
+
+## run
+
+Processes either the files or the input from the command line. In both cases
+it prints to the screen. This might change for files in the future.
+
+## remove\_ansi\_colors
+
+The actual code that removes the ANSI coloring from a string. It alters the
+string it receives, for speed purposes.
+
+    my $line = '...';
+    $unansi->remove_ansi_colors($line);
