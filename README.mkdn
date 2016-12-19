@@ -1,6 +1,10 @@
-This is the documentation of the command implementation. You are most likely
-looking for the command documentation itself:
-[unansi](https://metacpan.org/pod/distribution/App-UnANSI/bin/unansi).
+# NAME
+
+App::UnANSI - Remove ANSI coloring from output or files
+
+# VERSION
+
+version 0.002
 
 # SYNOPSIS
 
@@ -13,6 +17,10 @@ looking for the command documentation itself:
 # DESCRIPTION
 
 This is the underlying implementation of
+[unansi](https://metacpan.org/pod/distribution/App-UnANSI/bin/unansi).
+
+This is the documentation of the command implementation. You are most likely
+looking for the command documentation itself:
 [unansi](https://metacpan.org/pod/distribution/App-UnANSI/bin/unansi).
 
 # ATTRIBUTES
@@ -54,3 +62,15 @@ string it receives, for speed purposes.
 
     my $line = '...';
     $unansi->remove_ansi_colors($line);
+
+# AUTHOR
+
+Sawyer X
+
+# COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2016 by Sawyer X.
+
+This is free software, licensed under:
+
+    The MIT (X11) License
