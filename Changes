@@ -1,5 +1,7 @@
 {{$NEXT}}
 
+    * Fix packaging to get the documentation rendered properly.
+
 0.001     2016-12-18 11:40:34+01:00 Europe/Amsterdam
 
     * This bugged me all too many times.
