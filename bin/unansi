@@ -4,6 +4,7 @@ use strict;
 use warnings;
 use App::UnANSI;
 # PODNAME: unansi
+# ABSTRACT: Remove ANSI coloring from output or files
 
 exit App::UnANSI->new_with_options()->run;
 
