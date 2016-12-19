@@ -3,6 +3,7 @@
 use strict;
 use warnings;
 use App::UnANSI;
+# PODNAME: unansi
 
 exit App::UnANSI->new_with_options()->run;
 
