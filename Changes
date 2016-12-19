@@ -1,5 +1,7 @@
 {{$NEXT}}
 
+    * Provide minimum Perl version. (Mohammad S Anwar)
+
 0.002     2016-12-19 12:12:03+01:00 Europe/Amsterdam
 
     * Fix packaging to get the documentation rendered properly.
